@@ -1,21 +1,3 @@
-a {
-    position: absolute;
-    bottom: 0;
-    z-index: 10;
-    left: 0;
-    right: 0;
-    background-color: red;
-    width: 100%;
-}
-
-body{
-    background: #e2fffff0;
-} 
-
-* { 
-    margin: 0; 
-    padding: 0; 
-  }
 
 .content {
     position: relative;
@@ -24,20 +6,6 @@ body{
     width: 100%;
     min-height: 150vh;
     background-color: rgb(1, 10, 20);
-}
-
-.br {
-    border-right: var(--border-size) solid;
-}
-
-.bl {
-    border-left: var(--border-size) solid;
-}
-.bt {
-    border-top: var(--border-size) solid;
-}
-.bb {
-    border-bottom: var(--border-size) solid;
 }
 
 #yellow-wrapper {
