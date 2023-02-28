@@ -1,0 +1,372 @@
+a {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    background-color: red;
+    width: 100%;
+}
+
+body{
+    background: #e2fffff0;
+} 
+
+* { 
+    margin: 0; 
+    padding: 0; 
+  }
+
+.content {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 150vh;
+    background-color: rgb(1, 10, 20);
+}
+
+.br {
+    border-right: var(--border-size) solid;
+}
+
+.bl {
+    border-left: var(--border-size) solid;
+}
+.bt {
+    border-top: var(--border-size) solid;
+}
+.bb {
+    border-bottom: var(--border-size) solid;
+}
+
+#yellow-wrapper {
+    position: absolute;
+    left: calc(2 * var(--pipe-width) + 3 * var(--major-gap));
+    top: 0;
+    bottom: calc(100% - (5 * var(--minor-gap) + 5 * var(--pipe-width) + var(--border-size)));
+    /* min-height: 200px; */
+    right: 0;
+    z-index: 1;
+}
+
+.yellow-pipe {
+    background-color:#ffd300ff;
+}
+
+h2 {
+    position: absolute;
+    font-size: 50px;
+    bottom: 0;
+    left: calc(2 * var(--pipe-width));
+    font-family: "GothamLight", sans-serif;
+}
+
+.yellow-pipe-1 {
+    position: absolute;
+    left: 0;
+    right: 10px;
+    top: calc(var(--pipe-width) + 2 * var(--minor-gap));
+    height: var(--pipe-width);
+    /* min-height: calc(var(--pipe-width)); */
+    text-align: right;
+}
+
+.yellow-pipe-2 {
+    position: absolute;
+    left: 0;
+    right: 10px;
+    top: calc(2 * var(--pipe-width) + 3 * var(--minor-gap));
+    height: var(--pipe-width);
+    /* min-height: calc(var(--pipe-width)); */
+    text-align: right;
+}
+
+.yellow-pipe-3 {
+    position: absolute;
+    left: 0;
+    right: 10px;
+    top: calc(3 * var(--pipe-width) + 4 * var(--minor-gap));
+    height: var(--pipe-width);
+    /* min-height: calc(var(--pipe-width)); */
+    text-align: right;
+}
+
+.yellow-pipe-4 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--pipe-width);
+    /* min-height: calc(var(--pipe-width)); */
+    text-align: right;
+}
+
+.yellow-pipe-5 {
+    position: absolute;
+    top: 0;
+    bottom: calc(100% - (var(--pipe-width) + 2 * var(--minor-gap) = var(--border-size)));
+    right: 10px;
+    width: var(--pipe-width);
+}
+
+.yellow-pipe-6 {
+    position: absolute;
+    top: calc(2 * var(--pipe-width) + 3 * var(--minor-gap));
+    bottom: calc(100% - (4 * var(--pipe-width) + 4 * var(--minor-gap)));
+    right: 10px;
+    width: var(--pipe-width);
+}
+
+.yellow-pipe-7 {
+    position: absolute;
+    top: calc(1 * var(--pipe-width) + 2 * var(--minor-gap));
+    bottom: calc(100% - (3 * var(--pipe-width) + 3 * var(--minor-gap)));
+    left: 0;
+    width: var(--pipe-width);
+}
+
+.yellow-pipe-8 {
+    position: absolute;
+    top: calc(3 * var(--pipe-width) + 4 * var(--minor-gap));
+    bottom: 0;
+    left: 0;
+    width: var(--pipe-width);
+}
+
+.yellow-line-1 {
+    position: absolute;
+    right: calc(var(--pipe-width) + 10px + var(--border-size));
+    height: 0;
+    left: calc(var(--pipe-width) + var(--border-size));
+    top: calc(var(--pipe-width) + 2 * var(--minor-gap));
+}
+
+.yellow-line-2 {
+    position: absolute;
+    right: calc(100% - var(--pipe-width) - var(--border-size));
+    width: 0;
+    top: calc(2 * var(--pipe-width) + 2 * var(--minor-gap));
+    bottom: calc(100% - (2 * var(--pipe-width) + 3 * var(--minor-gap) + var(--border-size)));
+}
+
+.yellow-line-3 {
+    position: absolute;
+    right: calc(100% - var(--pipe-width) - var(--border-size));
+    width: 0;
+    top: calc(4 * var(--pipe-width) + 4 * var(--minor-gap) + var(--border-size));
+    bottom: calc(var(--pipe-width));
+}
+
+.yellow-line-4 {
+    position: absolute;
+    right: calc(10px + var(--pipe-width));
+    width: 0;
+    top: calc(3 * var(--pipe-width) + 3 * var(--minor-gap) + var(--border-size));
+    bottom: calc(100% - (3 * var(--pipe-width) + 4 * var(--minor-gap) + var(--border-size)));
+}
+
+.yellow-line-5 {
+    position: absolute;
+    right: 0;
+    height: 0;
+    left: calc(var(--pipe-width) + var(--border-size));
+    bottom: 0;
+}
+
+#cyan-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: calc(100% - var(--major-gap) - var(--pipe-width));
+    top: calc(2 * var(--pipe-width) + 2 * var(--major-gap) + var(--minor-gap) - var(--border-size));
+    z-index: 0;
+    /* opacity: .8; */
+}
+
+.cyan-pipe {
+    background-color: #68c1c9;
+}
+
+.cyan-pipe-1 {
+    position: absolute;
+    right: 0;
+    /* transform: translate(-25%, 0); */
+    width: var(--pipe-width);
+    top: 0;
+    bottom: 0;
+}
+
+.cyan-pipe-2 {
+    position: absolute;
+    right: 0;
+    left: 0;
+    /* transform: translate(-25%, 0); */
+    height: var(--pipe-width);
+    top: 0;
+}
+
+.cyan-line-1 {
+    position: absolute;
+    left: 0;
+    height: 0;
+    right: calc(var(--pipe-width) + var(--border-size));
+    top: var(--pipe-width);
+}
+
+
+#pink-wrapper {
+    position: absolute;
+    height: calc(2 * (var(--pipe-width) + var(--major-gap)));
+    /* height: calc(2*(var(--pipe-width)+var(--major-gap))); */
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background-color: #FF000000;
+    text-align: right;
+    /* opacity: .5; */
+}
+
+.pink-pipe {
+    background-color:#d60f84;
+    /* filter: blur(var(--blur-size)); */
+}
+
+.pink-pipe-1 {
+    position: absolute;
+    right: calc(100% - var(--pipe-width) - var(--major-gap));
+    width: var(--pipe-width);
+    bottom: 0;
+    top: 0; 
+}
+
+.pink-pipe-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: calc(100% - var(--pipe-width) - var(--major-gap));
+    height: var(--pipe-width);
+}
+
+.pink-line-1 {
+    position: absolute;
+    left: 0;
+    height: 0;
+    right: calc(100% - var(--major-gap) + var(--border-size));
+    bottom: var(--pipe-width);
+}
+
+.pink-pipe {
+    background-color:#d60f84;
+    /* filter: blur(var(--blur-size)); */
+}
+
+.pink-pipe-1 {
+    position: absolute;
+    right: calc(100% - var(--pipe-width) - var(--major-gap));
+    width: var(--pipe-width);
+    bottom: 0;
+    top: 0; 
+}
+
+.pink-pipe-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: calc(100% - var(--pipe-width) - var(--major-gap));
+    height: var(--pipe-width);
+}
+
+.pink-line-1 {
+    position: absolute;
+    left: 0;
+    height: 0;
+    right: calc(100% - var(--major-gap) + var(--border-size));
+    bottom: var(--pipe-width);
+}
+
+#purple-wrapper {
+    position: absolute;
+    top: var(--minor-gap);
+    left: 0;
+    right: 0;
+    bottom: calc(100% - (4 * var(--pipe-width) + 2 * (var(--major-gap) + var(--minor-gap))));
+    /* background-color: #FF0000F0; */
+    /* opacity: .8; */
+}
+
+.purple-pipe {
+    background-color: #9697c0;
+    z-index: 2;
+    /* filter: blur(var(--blur-size)); */
+}
+
+.purple-pipe-1 {
+    position: absolute;
+    right: calc(100% - 2 * (var(--pipe-width) + var(--major-gap)));
+    top: 0;
+    width: var(--pipe-width);
+    height: 100%;
+}
+
+.purple-pipe-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: calc(100% - 2 * (var(--pipe-width) + var(--major-gap)));
+    height: var(--pipe-width);
+}
+
+.purple-pipe-3 {
+    position: absolute;
+    top: 0;
+    left: calc(var(--pipe-width) + 2 * var(--major-gap) - var(--border-size));
+    right: 0;
+    height: var(--pipe-width);
+}
+
+.purple-line-1 {
+    position: absolute;
+    right: calc(100% - (2 * var(--major-gap) + var(--pipe-width) - var(--border-size)));
+    bottom: var(--pipe-width);
+    height: 0;
+    left: 0;
+}
+
+.purple-line-2 {
+    position: absolute;
+    left: calc(2 * var(--major-gap) + 2 * var(--pipe-width) - var(--border-size));
+    top: var(--pipe-width);
+    height: 0;
+    right: 0;
+}
+
+.divWrapper
+{
+     position:absolute;
+     top:0px;
+     padding-top:50%; /* center the top of child elements vetically */
+     padding-bottom:50%;
+     height:0px;
+}
+
+
+.title {
+    position: absolute;
+    /* padding-top: 50px; */
+    bottom: 0;
+    vertical-align: middle;
+    text-align: right;
+    color: Black;
+    left: var(--pipe-width);
+    font-size: 60pt;
+    font-weight: bold;
+    font-family: "GothamLight", sans-serif;
+    z-index: 2; 
+}
+
+p {
+    font-size: 30pt;
+    font-family: "GothamLight", sans-serif; 
+}

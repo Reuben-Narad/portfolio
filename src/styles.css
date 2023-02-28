@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin:0;
+    padding:0;
+}  
+
+:root {
+    --bookend-width: 1.5vh;
+    --pipe-width: min(14vh, 16vw);
+    --border-size: 6px;
+    --minor-gap: 3vh;
+    --major-gap: 8vh;
+}
+
+@font-face {
+    font-family: "GothamMedium";
+    src: url("./assets/Gotham Condensed Medium.otf");
+}
+
+@font-face {
+    font-family: "GothamLight";
+    src: url("./assets/Gotham Condensed Light.otf");
+}
+
+@font-face {
+    font-family: "GothamWideMed";
+    src: url("./assets/GothamMedium.ttf");
+}
+
+@font-face {
+    font-family: "GothamWideLight";
+    src: url("./assets/GothamLight.ttf");
+}
+
+main {
+    text-align: center;
+    position: relative;
+}
+
+.router-link {
+    border: none;
+  }
+
+a {
+    width: 100%;
+    text-align: right;
+    text-decoration: none;
+    font-family: "GothamLight", sans-serif;
+    outline: none;
+}
+
+.light {
+    font-family: "GothamLight", sans-serif;
+}
+
+.medium {
+    font-family: "GothamMedium", sans-serif;
+}
+
+.direction {
+    position: absolute;
+    top: 2vh;
+    right: 10px;
+    /* vertical-align: middle; */
+    color: Black;
+    font-size: 8vh;
+    font-weight: lighter;
+
+    z-index: 200;
+}
+
+.direction:hover {
+    color: rgb(48, 45, 22);
+}
+
+.title {
+    position: absolute;
+    /* padding-top: 50px; */
+    bottom: 0;
+    vertical-align: middle;
+    text-align: right;
+    color: Black;
+    left: calc(var(--pipe-width) + 2 * var(--major-gap));
+    font-size: 60pt;
+    z-index: 2; 
+}
+
+b {
+    font-family: "GothamWideMed";
+}
+
+.br {
+    border-right: var(--border-size) solid;
+}
+
+.bl {
+    border-left: var(--border-size) solid;
+}
+.bt {
+    border-top: var(--border-size) solid;
+}
+.bb {
+    border-bottom: var(--border-size) solid;
+}

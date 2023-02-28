@@ -1,0 +1,89 @@
+/* <div class="entry-container">
+    <div class="top">
+        <h2 class="entry-header">Honors 100</h2>
+        <h6 class="entry-category">Paper</h6>
+        <h6 class="entry-date">Feb 26, 2023</h6>
+    </div>
+    <div class="bottom">
+        <h4 class="caption">caption</h4>
+    </div>
+    </div> */
+
+* {
+    text-align: left;
+    border-color: black;
+}
+
+.entry-container {
+    position: relative;
+    width: 100%;
+    padding-top: 65%;
+    font-family: "GothamLight";
+    text-align: left;
+    background-color: #3c9ea7;
+    display: flex;
+    flex-flow: column;
+    border-radius: 10px;
+}
+
+.class-project {
+    background-color: #ffd300ff;
+}
+
+.paper {
+    background-color: #3c9ea7;
+}
+
+.coding {
+    background-color: #0d8f59;
+}
+
+.experience {
+    background-color: #d60f84;
+}
+
+.other {
+    background-color: #6d5cb3;
+}
+
+
+.top {
+    position: relative;
+    height: 60%;
+    flex: 0 1 auto;
+    width: 100%;
+}
+
+.bottom {
+    flex: 1 1 auto;
+    border-radius: 0 0 10px 10px;
+    background-color: rgba(255, 255, 255, 0.562);
+    border-top: 3px solid rgb(0, 0, 0);
+    padding-bottom: 10px;
+}
+
+.entry-header {
+    position: relative;
+    margin-top: 2px;
+    margin-left: 60px;
+    font-size: 25pt;
+    font-weight: lighter;
+    font-family: GothamMedium;
+    color: rgb(38, 38, 38);
+}
+
+.entry-category {
+    font-size: 20pt;
+    /* font-style: italic; */
+    margin-top: 10px;
+    margin-left: 60px;
+    color: rgb(79, 79, 79);
+}
+
+.entry-date {
+    font-size: 15pt;
+    bottom: 0;
+    margin-top: 8px;
+    margin-left: 60px;
+    color: rgb(75, 75, 75);
+}

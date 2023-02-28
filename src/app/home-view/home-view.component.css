@@ -1,0 +1,321 @@
+a {
+    border: none;
+}
+
+.content {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 200vh;
+    background-color: rgb(1, 10, 20);
+}
+
+#yellow-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: calc(var(--major-gap) + var(--pipe-width));
+    min-width: 400px;
+    /* min-height: 200px; */
+    right: var(--minor-gap);
+    z-index: 5;
+}
+
+.yellow-pipe {
+    background-color:#ffd300ff;
+}
+
+.yellow-pipe-1 {
+    position: relative;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    float: right;
+    width: var(--pipe-width);
+}
+
+.yellow-pipe-2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--pipe-width);
+    /* min-height: calc(var(--pipe-width)); */
+    text-align: right;
+}
+
+.yellow-pipe-3 {
+    position: absolute;
+    left: 0;
+    height: 0;
+    right: calc(var(--pipe-width) + 6px);
+    bottom: var(--pipe-width);
+    z-index: 100;
+}
+
+.yellow-pipe-4 {
+    position: absolute;
+    right: 0;
+    top: calc(4 * var(--pipe-width) + 2 * (var(--major-gap) + 2 * var(--minor-gap)));
+    left: calc(100% - (2 * var(--pipe-width) + 2 * var(--minor-gap)));
+    height: var(--pipe-width);
+}
+
+#cyan-wrapper {
+    position: absolute;
+    width: 100%;
+    height: calc(3 * var(--pipe-width) + 2 * var(--major-gap) + var(--minor-gap));
+    top: 0px;
+    z-index: 1;
+    background-color: #FF000000;
+}
+
+.cyan-pipe {
+    background-color: #68c1c9;
+}
+
+.cyan-pipe-1 {
+    position: absolute;
+    right: calc(2 * var(--minor-gap) + var(--pipe-width));
+    /* transform: translate(-25%, 0); */
+    width: var(--pipe-width);
+    height: 100%;
+}
+
+.cyan-pipe-2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: var(--pipe-width);
+}
+
+.cyan-line-1 {
+    position: absolute;
+    left: 0;
+    height: 0;
+    right: calc(2 * (var(--minor-gap) + var(--pipe-width)) + var(--border-size));
+    bottom: var(--pipe-width);
+}
+
+.cyan-line-2 {
+    position: absolute;
+    right: 0;
+    height: 0;
+    left: calc(100% - (2 * var(--minor-gap) + var(--pipe-width) + var(--border-size)));
+    bottom: var(--pipe-width);
+}
+
+#pink-wrapper {
+    position: absolute;
+    height: calc(2 * (var(--pipe-width) + var(--major-gap)));
+    /* height: calc(2*(var(--pipe-width)+var(--major-gap))); */
+    left: calc(2 * var(--pipe-width) + var(--minor-gap));
+    right: 0;
+    top: 0;
+    z-index: 2;
+    background-color: #FF000000;
+    text-align: right;
+    /* opacity: .5; */
+}
+
+.pink-pipe {
+    background-color:#d60f84;
+    /* filter: blur(var(--blur-size)); */
+}
+
+.pink-pipe-1 {
+    position: absolute;
+    left: 0;
+    width: var(--pipe-width);
+    height: 100%;
+}
+
+.pink-pipe-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: var(--pipe-width);
+    z-index: 10;
+}
+
+.pink-line-1, .purple-line-1 {
+    position: absolute;
+    right: 0;
+    height: 0;
+    z-index: 20;
+    left: calc(var(--pipe-width) + 6px);
+    bottom: var(--pipe-width);
+}
+
+#purple-wrapper {
+    position: absolute;
+    top: 0;
+    left: var(--major-gap);
+    right: 0;
+    height: calc(4 * var(--pipe-width) + 2 * (var(--major-gap) + var(--minor-gap)));
+    z-index: 0;
+    /* background-color: #FF0000F0; */
+    /* opacity: .8; */
+}
+
+.purple-pipe {
+    background-color: #9697c0;
+    /* filter: blur(var(--blur-size)); */
+}
+
+.purple-pipe-1 {
+    position: absolute;
+    left: 0;
+    width: var(--pipe-width);
+    height: 100%;
+}
+
+.purple-pipe-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: var(--pipe-width);
+}
+
+.purple-pipe-3 {
+    position: absolute;
+    top: 100%;
+    bottom: -100vh;
+    left: 0;
+    right: 0;
+    width: var(--pipe-width);
+}
+
+.purple-line-2 {
+    position: absolute;
+    right: 0;
+    height: 0;
+    left: calc(var(--pipe-width) + 6px);
+    bottom: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+    #portrait {
+        position: absolute;
+        left: calc(2 * var(--pipe-width));
+        width: 450px;
+        bottom: calc(100% - (4 * var(--pipe-width) + 2 * var(--minor-gap) + 2 * var(--major-gap)));
+        object-fit: fill;
+        z-index: 8;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #portrait {
+        position: absolute;
+        left: 25%;
+        width: 450px;
+        top: calc(100% - (4 * var(--pipe-width) + 2 * var(--minor-gap) + 2 * var(--major-gap)));
+        object-fit: fill;
+        z-index: 8;
+    }
+    .collapses {
+        display: none;
+    }
+}
+
+.image {
+    object-fit: fill;
+    width: 100%;
+}
+
+.divWrapper
+{
+     position:absolute;
+     top:0px;
+     padding-top:50%; /* center the top of child elements vetically */
+     padding-bottom:50%;
+     height:0px;
+}
+
+#about {
+    transform: rotate(90deg) translate(0, -100%);
+    transform-origin: top left;
+    size: 40pt;
+    white-space:nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* vertical-align: middle; */
+    color: Black;
+    font-size: 50pt;
+    font-weight: lighter;
+    font-family: "GothamMedium", sans-serif;
+    z-index: 2;
+}
+
+
+#myName {
+    font-size: 50px;
+    left: 0;
+    bottom: 10px;
+    font-family: "GothamWideMed";
+    font-weight: lighter;
+}
+
+/* Moves welcome message horizontal vs. vertical */
+@media only screen and (min-width: 1300px) {
+    #welcome {
+        left: 30%;
+        font-size: 100px;
+        top: 0;
+        font-family: "GothamLight";
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #subwelcome {
+        left: 43%;
+        font-size: 35px;
+        top: 30%;
+        font-family: "GothamLight";
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #welcome, #subwelcome {
+        display: none;
+    }
+}
+
+.section2 {
+    position: absolute;
+    background-color: black;
+    top: 90vh;
+    left: calc(var(--pipe-width) + 2 * var(--major-gap));
+    right: calc(var(--pipe-width) + 2 * var(--major-gap));
+    bottom: 0;
+    border-radius: 40px;
+    border: rgb(66, 66, 66) solid;
+}
+
+#hello {
+    position: relative;
+    top: 100px;
+    font-family: "GothamWideLight", sans-serif;
+    margin-left: 100px;
+    font-size: 70pt;
+    float: left;
+    color: #acb9c5;
+}
+
+ul {
+    position: relative;
+    margin-top: 170px;
+    font-family: "GothamWideLight", sans-serif;
+    text-align: left;
+    margin-left: calc(2 * var(--major-gap));
+    font-size: 30pt;
+    float: left;
+    color: #acb9c5;
+}

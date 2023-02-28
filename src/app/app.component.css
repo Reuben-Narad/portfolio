@@ -1,0 +1,53 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.176);
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .navbar-item {
+    margin: 0 10px;
+  }
+  
+  .navbar-item a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-item:hover a {
+    color: gray;
+  }
+
+
+.mazeWrapper {
+    text-align: center;
+    width: 110%;
+    position: fixed;
+    transform: translate(-5%, -3%);
+}
+
+.lines {
+    stroke-width: .3px;
+    stroke-linecap: round;
+    stroke-dasharray: 1;
+    stroke-dashoffset: .5;
+    animation: dash 1s cubic-bezier(.75,.7,.5,1);
+    stroke: rgba(4, 40, 5, 1);
+}
+
+#maze {
+    border-style: solid;
+    border-color: rgba(4, 40, 5, .5);
+    border-width: .3px;
+    /* transform: rotate(-5deg) */
+}

@@ -1,0 +1,17 @@
+<a routerLink="/page" [queryParams]="{title: title, category: category, date: date}">
+<div class="entry-container" [ngClass]="{
+    'class-project': category === 'Class Project',
+    'paper': category === 'Paper',
+    'coding': category === 'Coding',
+    'experience': category === 'Experience',
+    'other': category === 'Other'
+}">
+        <div class="top"></div>
+        <div class="bottom">
+            <h6 class="entry-category">{{ category }}</h6>
+            <h2 class="entry-header">{{ title }}</h2>
+            
+            <h6 class="entry-date">{{ date }}</h6>
+    </div>
+</div>
+</a>

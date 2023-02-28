@@ -1,0 +1,36 @@
+<html lang="en">
+
+<body>
+
+<div class="content"> 
+    <div id="cyan-wrapper">
+        <div class="cyan-pipe cyan-pipe-1 bt bb">
+            <h2 class="date">{{ date }}</h2><h2 class="title">{{ title }}</h2>
+        </div>
+    </div>
+    <div class="subtitle-wrapper" >
+        <div class="subtitle-pipe subtitle-pipe-1" [ngClass]="{
+            'class-project': category === 'Class Project',
+            'paper': category === 'Paper',
+            'coding': category === 'Coding',
+            'experience': category === 'Experience',
+            'other': category === 'Other'
+        }"></div>
+        <div class="subtitle-pipe subtitle-pipe-2" [ngClass]="{
+            'class-project': category === 'Class Project',
+            'paper': category === 'Paper',
+            'coding': category === 'Coding',
+            'experience': category === 'Experience',
+            'other': category === 'Other'
+        }">
+            <h2 class="category">{{ category }}</h2>
+        </div>
+    </div>
+    <div id="caption-box">
+        <h2 class="caption">This is my paper. I hope you like it!</h2>
+    </div>
+    <div id="artifact">
+        <iframe></iframe>
+    </div>
+
+</div>
