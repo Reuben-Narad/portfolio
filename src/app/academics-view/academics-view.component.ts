@@ -7,3 +7,4 @@ import { Component, HostListener } from '@angular/core';
 })
 export class AcademicsViewComponent {
 }
+
