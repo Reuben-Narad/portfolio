@@ -58,34 +58,6 @@ body{
     text-align: right;
     z-index: -2;
 }
-/* 
-.yellow-pipe-3 {
-    position: absolute;
-    left: 30%;
-    right: 0;
-    top: calc(2 * var(--pipe-width) + 2 * var(--major-gap) + var(--minor-gap));
-    height: var(--pipe-width);
-    text-align: right;
-}
-
-.yellow-pipe-4 {
-    position: absolute;
-    left: 30%;
-    right: 0;
-    top: calc(3 * var(--pipe-width) + 2 * var(--major-gap) + 2 * var(--minor-gap));;
-    height: var(--pipe-width);
-    text-align: right;
-}
-
-.yellow-pipe-5 {
-    position: absolute;
-    left: 30%;
-    right: 0;
-    top: calc(4 * var(--pipe-width) + 2 * var(--major-gap) + 3 * var(--minor-gap));
-    height: var(--pipe-width);
-    text-align: right;
-} */
-
 
 .yellow-pipe-7 {
     position: absolute;
